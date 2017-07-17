@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.widget.RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.dragonsage.mp3player.Player">
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp" />
+
+    <Button
+        android:id="@+id/buPlay"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="48dp"
+        android:onClick="buPlay"
+        android:text="PL" />
+
+    <Button
+        android:id="@+id/buFF"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buPlay"
+        android:layout_alignBottom="@+id/buPlay"
+        android:layout_toStartOf="@+id/buNext"
+        android:onClick="buFF"
+        android:text="FF" />
+
+    <Button
+        android:id="@+id/buFB"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buPlay"
+        android:layout_alignBottom="@+id/buPlay"
+        android:layout_toEndOf="@+id/buPrevious"
+        android:onClick="buFB"
+        android:text="FB" />
+
+    <Button
+        android:id="@+id/buPrevious"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buFB"
+        android:layout_alignBottom="@+id/buFB"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="11dp"
+        android:onClick="buPrevious"
+        android:text="PV" />
+
+    <Button
+        android:id="@+id/buNext"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/buFF"
+        android:layout_alignBottom="@+id/buFF"
+        android:layout_alignParentEnd="true"
+        android:onClick="buNext"
+        android:text="NT" />
+</android.widget.RelativeLayout>
